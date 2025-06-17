@@ -35,9 +35,7 @@ const ObjectDetection = () => {
 
       
       const detectedObjects = await net.detect(
-        webcamRef.current.video,
-        undefined,
-        0.6
+        webcamRef.current.video
       );
 
         console.log(detectedObjects);
